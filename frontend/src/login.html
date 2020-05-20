@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <title>Login - BrainShop</title>
+</head>
+<body>
+    <div id="corpo">
+        <section id="cadastro">
+            <div class="form">
+                <h1>Faça Cadastro</h1>
+                <div class="group">
+                    <label for="txtNome">Insira seu nome:</label>
+                    <input type="text" id="txtNome">
+                </div>
+                <div class="group">
+                    <label for="txtEmail">Insira seu email:</label>
+                    <input type="email" id="txtEmail">
+                </div>
+                <div class="group">
+                    <label for="txtSenha">Insira sua senha:</label>
+                    <input type="password" id="txtSenha">
+                </div>
+                <div class="group">
+                    <button id="btnCadastrar">Cadastre</button>
+                </div>
+                <div class="group">
+                    <a id="openLog">Clique aqui para fazer login</a>
+                </div>
+            </div>
+        </section>
+        <section id="login">
+            <div class="form">
+                <h1>Faça Login</h1>
+                <div class="group">
+                    <label for="txtNomel">Insira seu nome:</label>
+                    <input type="text" id="txtNomel">
+                </div>
+                <div class="group">
+                    <label for="txtSenhal">Insira sua senha:</label>
+                    <input type="password" id="txtSenhal">
+                </div>
+                <div class="group">
+                    <button id="btnLogar">Entrar</button>
+                </div>
+                <div class="group">
+                    <a id="openCad">Clique aqui para se cadastrar</a>
+                </div>
+            </div>
+        </section>
+        <section id="capa"></section>
+    </div>
+    <script src="../node_modules/axios/dist/axios.js"></script>
+    <script src="./js/login.js"></script>
+</body>
+</html>

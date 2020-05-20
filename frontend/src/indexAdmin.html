@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/adm.css">
+    <title>Brain Shop - Admin</title>
+</head>
+
+<body>
+    <nav>
+        <div id="logo" onclick="window.location.href = './index.html'">
+            <h1>Brain Shop</h1>
+            <i class="fas fa-mobile"></i>
+        </div>
+        <div id="nav">
+            <h1>Navbar</h1>
+        </div>
+    </nav>
+    <div id="tela">
+        <section id="users">
+            <div class="head">
+                <h1>Usuários</h1>
+                <button id="addUser"><i class="fas fa-plus"></i></button>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>nome</th>
+                        <th>email</th>
+                        <th>senha</th>
+                        <th>-</th>
+                    </tr>
+                </thead>
+                <tbody id="tabUser"></tbody>
+            </table>
+        </section>
+        <section id="produtos">
+            <div class="head">
+                <h1>Produtos</h1>
+                <button id="addProd"><i class="fas fa-plus"></i></button>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>nome</th>
+                        <th>marca</th>
+                        <th>img</th>
+                        <th>quantidade</th>
+                        <th>preco</th>
+                        <th>-</th>
+                    </tr>
+                </thead>
+                <tbody id="tabProdu"></tbody>
+            </table>
+        </section>
+    </div>
+    <div id="formUser" class="telaForm" style="display: none;">
+        <div class="form">
+            <button class="fechar" iUser><i class="fas fa-times"></i></button>
+            <h1>Cadastrar Usuário</h1>
+            <div class="group">
+                <label for="txtNome">Insira o nome:</label>
+                <input type="text" id="txtNome">
+            </div>
+            <div class="group">
+                <label for="txtEmail">Insira o email:</label>
+                <input type="text" id="txtEmail">
+            </div>
+            <div class="group">
+                <label for="txtSenha">Insira a senha:</label>
+                <input type="text" id="txtSenha">
+            </div>
+            <div class="group">
+                <button id="btnAddUser">Adicionar</button>
+            </div>
+        </div>
+    </div>
+    <div id="formProd" class="telaForm" style="display: none;">
+        <div class="form">
+            <button class="fechar" iProd><i class="fas fa-times"></i></button>
+            <h1>Cadastrar Produto</h1>
+            <div class="grid">
+                <div class="side">
+                    <div class="group">
+                        <label for="txtNomep">Insira o nome:</label>
+                        <input type="text" id="txtNomep">
+                    </div>
+                    <div class="group">
+                        <label for="txtDescp">Insira a descrição:</label>
+                        <textarea id="txtDescp" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="group">
+                        <label for="txtMarcap">Insira a marca:</label>
+                        <input type="text" id="txtMarcap">
+                    </div>
+                </div>
+                <div class="side">
+                    <div class="group">
+                        <label for="txtImgp">Insira a imagem:</label>
+                        <input type="text" id="txtImgp">
+                    </div>
+                    <div class="group">
+                        <label for="txtQuantidadep">Insira a quantidade:</label>
+                        <input type="text" id="txtQuantidadep">
+                    </div>
+                    <div class="group">
+                        <label for="txtPrecop">Insira o preco:</label>
+                        <input type="text" id="txtPrecop">
+                    </div>
+                    <div class="group">
+                        <button id="btnAddProd">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="confirm" class="telaForm" style="display: none;">
+        <div class="form">
+            <h1>Tem certeza que deseja deletar?</h1>
+            <div class="group row">
+                <button id="sim">Sim</button>
+                <button id="nao">Não</button>
+            </div>
+        </div>
+    </div>
+    <script src="../node_modules/axios/dist/axios.js"></script>
+    <script src="./js/admin.js"></script>
+</body>
+
+</html>

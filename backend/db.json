@@ -1,0 +1,262 @@
+{
+  "produtos": [
+    {
+      "nome": "Galaxy S10",
+      "marca": "Samsung",
+      "img": "./img/s10.jpg",
+      "quantidade": "20",
+      "preco": "3500",
+      "descricao": "RAM -> 4GB,\nROM -> 128GB,\n2 Câmeras de 16MP",
+      "id": 1
+    },
+    {
+      "nome": "Galaxy S10e",
+      "marca": "Samsung",
+      "img": "./img/s10e.jpg",
+      "quantidade": 10,
+      "preco": 4500,
+      "descricao": "",
+      "id": 2
+    },
+    {
+      "nome": "Galaxy A51",
+      "marca": "Samsung",
+      "img": "./img/a51.jpg",
+      "quantidade": 20,
+      "preco": 1699,
+      "descricao": "",
+      "id": 3
+    },
+    {
+      "nome": "Galaxy A30s",
+      "marca": "Samsung",
+      "img": "./img/a30s.jpg",
+      "quantidade": 10,
+      "preco": 950,
+      "descricao": "",
+      "id": 4
+    },
+    {
+      "nome": "Galaxy S20 +",
+      "marca": "Samsung",
+      "img": "./img/s20+.jpg",
+      "quantidade": "10",
+      "preco": "5499",
+      "descricao": "",
+      "id": 5
+    },
+    {
+      "nome": "Moto G8",
+      "marca": "Motorola",
+      "img": "./img/g8.jpg",
+      "quantidade": "5",
+      "preco": "1300",
+      "descricao": "",
+      "id": 6
+    },
+    {
+      "nome": "Moto G8 Plus",
+      "marca": "Motorola",
+      "img": "./img/g8plus.jpg",
+      "quantidade": "20",
+      "preco": "1369",
+      "descricao": "",
+      "id": 7
+    },
+    {
+      "nome": "Moto E6",
+      "marca": "Motorola",
+      "img": "./img/e6.jpg",
+      "quantidade": "30",
+      "preco": "699",
+      "descricao": "",
+      "id": 8
+    },
+    {
+      "nome": "Moto G7 Plus",
+      "marca": "Motorola",
+      "img": "./img/g7plus.jpg",
+      "quantidade": "20",
+      "preco": "1255",
+      "descricao": "",
+      "id": 9
+    },
+    {
+      "nome": "Moto One Vision",
+      "marca": "Motorola",
+      "img": "./img/oneVision.jpg",
+      "quantidade": "30",
+      "preco": "1499",
+      "descricao": "",
+      "id": 10
+    }
+  ],
+  "users": [
+    {
+      "nome": "Arthur",
+      "email": "arthurmendes@gmail.com",
+      "senha": "arthurlindo",
+      "carrinho": {
+        "quantidade": 3,
+        "produtos": [
+          {
+            "id": 1,
+            "quantidade": 1
+          },
+          {
+            "id": 4,
+            "quantidade": 1
+          },
+          {
+            "id": 3,
+            "quantidade": 1
+          }
+        ]
+      },
+      "id": 1
+    },
+    {
+      "nome": "Leticia",
+      "email": "leticialuciane@gmail.com",
+      "senha": "leticialinda",
+      "carrinho": {
+        "quantidade": 5,
+        "produtos": [
+          {
+            "id": 3,
+            "quantidade": 1
+          },
+          {
+            "id": 10,
+            "quantidade": 1
+          },
+          {
+            "id": 9,
+            "quantidade": 1
+          },
+          {
+            "id": 8,
+            "quantidade": 1
+          },
+          {
+            "id": 6,
+            "quantidade": 1
+          }
+        ]
+      },
+      "id": 2
+    },
+    {
+      "nome": "Dulce",
+      "email": "dulcemendes@gmail.com",
+      "senha": "dulce123",
+      "carrinho": {
+        "quantidade": 0,
+        "produtos": []
+      },
+      "id": 3
+    },
+    {
+      "nome": "Caio",
+      "email": "caio@gmail.com",
+      "senha": "caio123",
+      "carrinho": {
+        "quantidade": 4,
+        "produtos": [
+          {
+            "id": 3,
+            "quantidade": 1
+          },
+          {
+            "id": 1,
+            "quantidade": 1
+          },
+          {
+            "id": 5,
+            "quantidade": 1
+          },
+          {
+            "id": 10,
+            "quantidade": 1
+          }
+        ]
+      },
+      "id": 4
+    },
+    {
+      "nome": "Julia",
+      "email": "julia@gmail.com",
+      "senha": "julia123",
+      "carrinho": {
+        "quantidade": 0,
+        "produtos": []
+      },
+      "id": 5
+    },
+    {
+      "nome": "Isabel",
+      "email": "isabel@gmail.com",
+      "senha": "isabel123",
+      "carrinho": {
+        "quantidade": 2,
+        "produtos": [
+          {
+            "id": 2,
+            "quantidade": 1
+          },
+          {
+            "id": 10,
+            "quantidade": 1
+          }
+        ]
+      },
+      "id": 7
+    },
+    {
+      "nome": "Farlen",
+      "email": "farlen@gmail.com",
+      "senha": "farlen123",
+      "carrinho": {
+        "quantidade": 3,
+        "produtos": [
+          {
+            "id": 7,
+            "quantidade": 1
+          },
+          {
+            "id": 1,
+            "quantidade": 1
+          },
+          {
+            "id": 4,
+            "quantidade": 1
+          }
+        ]
+      },
+      "id": 8
+    },
+    {
+      "nome": "Gabriel",
+      "email": "gabriel@gmail.com",
+      "senha": "gabriel123",
+      "carrinho": {
+        "quantidade": 3,
+        "produtos": [
+          {
+            "id": 10,
+            "quantidade": 1
+          },
+          {
+            "id": 9,
+            "quantidade": 1
+          },
+          {
+            "id": 8,
+            "quantidade": 1
+          }
+        ]
+      },
+      "id": 9
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yesteryear&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --nav-height: 10vh;
+    --lateral-width: 225px;
+    --primary: #7e4ec5;
+    --primary-dark: #6c37bb;
+    --secondary: #ff3ba7;
+    --terciary: #f8ba55;
+    --shadow: 0px 7px 30px #0005;
+}
+
+input, button {
+    outline: none;
+    border: none;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: var(--lateral-width) 1fr;
+    grid-template-rows: var(--nav-height);
+    grid-template-areas: 
+    "logo nav";
+    font-family: 'Ubuntu', sans-serif;
+}
+#logo{
+    grid-area: logo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow);
+    background-color: var(--primary-dark);
+    color: var(--terciary);
+}
+#logo i{
+    margin: 0 10px;
+    font-size: 2em;
+}
+#nav{
+    grid-area: nav;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    background-color: var(--primary-dark);
+    color: var(--terciary);
+    box-shadow: var(--shadow);
+}
+#tela{
+    display: flex;
+}
+section{
+    width: 50vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+section h1{
+    font-size: 2em;
+    color: #fff;
+    margin: 20px 0;
+}
+section:nth-child(1){
+    background-color: var(--secondary);
+}
+section:nth-child(2){
+    background-color: var(--terciary);
+}
+table{
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+}
+table td{
+    padding: 10px;
+}
+td i{
+    font-size: 1.5em;
+    cursor: pointer;
+}
+td .fa-trash{
+    color: #f00;
+}
+td .fa-edit{
+    color: #0a0;
+}
+.head{
+    display: flex;
+}
+.head button{
+    padding: 0px 10px;
+    font-size: 2em;
+    background: transparent;
+    color: #0a0;
+    text-shadow: var(--shadow);
+    cursor: pointer;
+}
+.telaForm{
+    top: 0;
+    position: fixed;
+    width: 100vw;
+    background-color: #0003;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form{
+    background-color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+}
+.group{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+.group input{
+    padding: 10px 0;
+    border-bottom: 2px solid var(--primary-dark);
+    font-family: 'Ubuntu', sans-serif;
+}
+.group button{
+    padding: 10px;
+    background: var(--primary-dark);
+    color: #fff;
+    border-radius: 20px;
+    transition: 500ms;
+    cursor: pointer;
+}
+.group button:hover{
+    box-shadow: var(--shadow);
+}
+.form .fechar{
+    position: absolute;
+    top: 50px;
+    right: 60px;
+    width: 50px;
+    height: 50px;
+    float: right;
+    border-radius: 50%;
+    background-color: #f00;
+    font-size: 2em;
+    color: #fff;
+    box-shadow: var(--shadow);
+    cursor: pointer;
+}
+.row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/forms.css">
+    <title>Carrinho</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo" class="center" onclick="window.location.href = './index.html'">
+            <h1>Brain Shop</h1>
+            <i class="fas fa-mobile"></i>
+        </div>
+        <div id="navItems" class="center">
+            <button id="btnVoltar" onclick="window.location.href = './index.html'">Voltar</button>
+        </div>
+    </nav>
+    <main id="cart">
+        <section id="cartTable">
+            <h1>Minha Cesta</h1>
+            <table>
+                <tbody id="table"></tbody>
+            </table>
+        </section>
+        <aside>
+            <h1>Resumo do pedido</h1>
+            <div id="resumoItem" class="resumoItem"></div>
+            <div class="resumoItem">
+                <strong>Total</strong>
+                <strong id="total"></strong>
+            </div>
+        </aside>
+    </main>
+    <script src="../node_modules/axios/dist/axios.js"></script>
+    <script src="./js/setLocal.js"></script>
+    <script src="./js/cart.js"></script>
+</body>
+
+</html>

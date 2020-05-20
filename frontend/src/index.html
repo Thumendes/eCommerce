@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Thu</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo" class="center" onclick="window.location.href = './index.html'">
+            <h1>Thu</h1>
+            <i class="fas fa-mobile"></i>
+        </div>
+        <div id="navSearch">
+            <input type="text">
+            <button id="shop">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+        <div id="navUser" class="center">
+            <i class="fas fa-user"></i>
+            <h1 id="logado"></h1>
+            <div class="options">
+                <button id="btnSair"><i class="fas fa-sign-out-alt"></i>Sair</button>
+                <button id="verUser"><i class="fas fa-user-cog"></i>Ver Conta</button>
+            </div>
+        </div>
+        <div id="navCart" class="center">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="qtCart"></span>
+            <div>
+                <h1></h1>
+            </div>
+        </div>
+        <div id="navItems" class="center">
+            <button id="moveis">Samsung</button>
+            <button id="bebidas">Apple</button>
+            <button id="celulares">Motorola</button>
+            <button id="informatica">Xiaomi</button>
+            <button id="fitness">Windows Phone</button>
+        </div>
+    </nav>
+    <header id="intro">
+        <div class="form">
+            <h1>Bem Vindo!</h1>
+        </div>
+    </header>
+    <section id="titulo">
+        <h1>Todos os celulares</h1>
+    </section>
+    <main id="main">
+        <section id="produtos"></section>
+        <footer id="footer">
+            <h2><i class="far fa-copyright"></i>Arthur Mendes</h2>
+        </footer>
+    </main>
+    <div id="modalProd">
+        <div class="form">
+            <button class="fechar" iProd><i class="fas fa-times"></i></button>
+            <img src="" alt="" id="img">
+            <div class="info">
+                <h1 id="nome"></h1>
+                <p id="desc"></p>
+                <p id="marca"></p>
+                <h3 id="preco"></h3>
+                <div class="buttons">
+                    <button id="addCart"><i class="fas fa-shopping-cart"></i>Adicionar</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="../node_modules/axios/dist/axios.js"></script>
+    <script src="./js/main.js" type="module"></script>
+    <script src="./js/modalProd.js"></script>
+</body>
+
+</html>

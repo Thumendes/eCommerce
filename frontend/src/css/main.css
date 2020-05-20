@@ -1,0 +1,112 @@
+:root{
+    --footer-height: 200px;
+    --shadow: 5px 5px 30px #0003;
+}
+#main{
+    display: grid;
+    grid-template-rows: 1fr var(--footer-height);
+    grid-template-areas: "produtos" "footer";
+}
+#produtos{
+    grid-area: produtos;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+#produtos .produto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 40px;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 10px;
+    cursor: pointer;
+    align-items: center;
+    transition: 500ms;
+    border-radius: 25px;
+}
+.produto:hover{
+    box-shadow: 0px 5px 25px #0002;
+}
+.produto img{
+    width: 175px;
+}
+.produto .preco{
+    color: #0a0;
+}
+#footer{
+    font-family: 'Ubuntu', sans-serif;
+    grid-area: footer;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--primary);
+}
+#modalProd{
+    top: 0;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: #0003;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.form{
+    display: flex;
+    padding: 50px;
+    background-color: #fff;
+    box-shadow: var(--shadow);
+    border-radius: 30px;
+}
+.info{
+    display: grid;
+    margin: 0 40px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.info #preco{
+    font-size: 1.4em;
+    color: #0a0;
+}
+.buttons button{
+    cursor: pointer;
+    background-color: var(--primary);
+    color: #fff;
+    font-size: 1.3em;
+    padding: 10px 20px;
+}
+.buttons i{
+    margin-right: 10px;
+}
+.form .fechar{
+    position: absolute;
+    top: 50px;
+    right: 60px;
+    width: 50px;
+    height: 50px;
+    float: right;
+    border-radius: 50%;
+    background-color: #f00;
+    font-size: 2em;
+    color: #fff;
+    box-shadow: var(--shadow);
+    cursor: pointer;
+}
+#modalProd img{
+    width: 400px;
+}
+#navCart span{
+    background-color: #fff;
+    color: var(--primary);
+    padding: 3px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid var(--terciary);
+    font-weight: bold;
+    position: absolute;
+    right: 60px;
+    top: 20px;
+}

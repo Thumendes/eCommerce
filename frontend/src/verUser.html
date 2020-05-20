@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/forms.css">
+    <title></title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo" class="center" onclick="window.location.href = './index.html'">
+            <h1>Brain Shop</h1>
+            <i class="fas fa-mobile"></i>
+        </div>
+        <div id="navUser" class="center">
+            <i class="fas fa-user"></i>
+            <h1 id="logado"></h1>
+            <div class="options">
+                <button id="btnSair"><i class="fas fa-sign-out-alt"></i>Sair</button>
+                <button id="verUser"><i class="fas fa-user-cog"></i>Ver Conta</button>
+            </div>
+        </div>
+        <div id="navCart" class="center">
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+        <div id="navItems" class="center">
+            <button id="btnVoltar" onclick="window.location.href = './index.html'">Voltar</button>
+        </div>
+    </nav>
+    <section id="form">
+        <div class="form">
+            <h1 id="title"></h1>
+            <div class="group">
+                <label for="txtNome">Seu nome:</label>
+                <input type="text" id="txtNome">
+            </div>
+            <div class="group">
+                <label for="txtEmail">Seu email:</label>
+                <input type="text" id="txtEmail">
+            </div>
+            <div class="group">
+                <label for="txtSenha">Sua senha:</label>
+                <input type="password" id="txtSenha">
+            </div>
+            <div class="group">
+                <button id="btnSalvar">Salvar</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="../node_modules/axios/dist/axios.js"></script>
+    <script src="./js/verUser.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+#form{
+    background: url('../img/varUserCapa.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.form{
+    background: #fff;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+}
+.form h1{
+    font-family: 'Yesteryear', cursive;
+    color: var(--primary-dark);
+    text-shadow: 3px 1px 0 var(--terciary);
+    font-size: 3em;
+}
+.group{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.group input{
+    padding: 10px 0;
+    border-bottom: 2px solid var(--primary-dark);
+    font-family: 'Ubuntu', sans-serif;
+}
+.group button{
+    padding: 10px;
+    background: var(--primary-dark);
+    color: #fff;
+    border-radius: 20px;
+    transition: 500ms;
+}
+.group button:hover{
+    box-shadow: var(--shadow);
+}
